@@ -44,5 +44,10 @@ public class ControladorCliente {
      sc.elimnarClinetePorID(doc);
 }
 
+@GetMapping("consulta/{nom}")
+public Cliente consultarClientePorNombre(@PathVariable("nom")String nom){
+
+    return sc.consultarPorNombre(nom);
+}
 
 }

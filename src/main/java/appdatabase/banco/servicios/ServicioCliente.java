@@ -39,6 +39,9 @@ public class ServicioCliente {
         rc.deleteById(doc);
     }
 
+    public Cliente consultarPorNombre(String nom){
 
+        return  rc.findByNombre(nom);
+    }
 
 }
