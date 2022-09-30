@@ -12,7 +12,10 @@ import java.util.List;
 public class ControladorCliente {
 @Autowired
    private  ServicioCliente sc;
-
+@GetMapping("/")
+public String inicio(){
+    return ("/");
+}
 
 @GetMapping
     public List<Cliente> listarinformacioncliente(){
